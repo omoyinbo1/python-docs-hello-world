@@ -9,4 +9,4 @@ def hello():
     credentials = MSIAuthentication(resource='https://vault.azure.net')
     kvclient = KeyVaultClient(credentials)
     key = kvclient.get_secret("https://mnanalyticssandbox-vault.vault.azure.net/", "DiskEncrption", "").value
-    return key
+    return "Hello!"
